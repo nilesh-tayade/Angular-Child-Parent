@@ -1,0 +1,32 @@
+<div class="jumbotron">
+<h1>From Parent to Child Demo</h1>
+<button class="btn  btn-primary" (click)="onclick()">Click To load Student Data</button>
+<table class="table table-hover  my-3">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">RollNo</th>
+        <th scope="col">City</th>
+        <th scope="col">Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stu of slist">
+
+           <td> {{stu.sname}}</td>
+           <td>   {{stu.rollno}} </td>
+           <td>   {{stu.city}} </td>
+           <td>   {{stu.course}} </td>
+            
+            
+           
+      </tr>
+     
+    </tbody>
+  </table>
+
+  <button class="btn  btn-primary" (click)="sendData()">Send Data To Parent</button>
+
+
+
+</div>
